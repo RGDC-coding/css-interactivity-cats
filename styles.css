@@ -1,0 +1,390 @@
+* {
+    background-color: #222831;
+    color: #ffffff;
+    box-sizing: border-box;
+  }
+  
+  main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  }
+  
+  #title-intro{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    width: 250px;
+    height: 50px;
+  }
+  
+  #title-intro h4{
+    color: #F3E5AB;
+  }
+  
+  #title-intro h5{
+    color: #EDEADE;
+  }
+  
+  #title-main {
+    margin-top: 0;
+    color: #EDEADE;
+  }
+  
+  #title {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0px;
+    width: 250px;
+  }
+  
+  
+  /*Cat One*/
+  
+  .cat-one-head{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 80%, rgba(150,150,150,1) 100%);
+    z-index: 1;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    width: 250px;
+    height: 200px;
+    border: 0px solid;
+    border-radius: 50%;
+  }
+  
+  .cat-one-left-ear {
+    z-index: 0;
+    position: absolute;
+    top: 40px;
+    left: 108px;
+    width: 100px;
+    height: 90px;
+    border-top: 80px solid transparent;
+    border-right: 75px solid transparent;
+    border-left: 75px solid #ffffff;
+    transform: rotate(-10deg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .cat-one-right-ear {
+   z-index: 0;
+    position: absolute;
+    top: 43px;
+    left: 192px;
+    width: 100px;
+    height: 90px;
+    border-top: 80px solid transparent;
+    border-right: 5px solid transparent;
+    border-left: 75px solid #ffffff;
+    transform: scaleX(-1) rotate(-10deg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .cat-one-left-eye{
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    top: 140px;
+    left: 118px;
+    width: 60px;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  
+  .cat-one-right-eye{
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    top: 140px;
+    left: 222px;
+    width: 60px;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  
+  .cat-one-inner-right-eye{
+    z-index: 3;
+    position: absolute;
+    background-color: black;
+    top: 160px;
+    left: 232px;
+    width: 30px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  
+  .cat-one-inner-left-eye{
+    z-index: 3;
+    position: absolute;
+    background-color: black;
+    top: 160px;
+    left: 138px;
+    width: 30px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  
+  .cat-one-eyes-closed{
+    display: none;
+  }
+  
+  .cat-one-left-eye-closed{
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    top: 175px;
+    left: 118px;
+    width: 60px;
+    height: 2px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  
+  .cat-one-right-eye-closed{
+    z-index: 5;
+    position: absolute;
+    background-color: white;
+    top: 175px;
+    left: 222px;
+    width: 60px;
+    height: 2px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  
+  .cat-one-nose {
+    z-index: 3;
+    position: absolute;
+    background-color: black;
+    top: 210px;
+    left: 180px;
+    width: 40px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  
+  .cat-one-whiskers-left-one {
+   position: absolute;
+   top: 208px;
+   left: 55px;
+   z-index: 4;
+   border: 1px solid black;
+   width: 120px;
+   height: 2px;
+   transform: rotate(8deg);
+  }
+  
+  .cat-one-whiskers-left-two {
+   position: absolute;
+   top: 219px;
+   left: 55px;
+   z-index: 4;
+   border: 1px solid black;
+   width: 120px;
+   height: 2px;
+   transform: rotate(3deg);
+  }
+  
+  .cat-one-whiskers-left-three {
+   position: absolute;
+   top: 233px;
+   left: 54px;
+   z-index: 4;
+   border: 1px solid black;
+   width: 120px;
+   height: 2px;
+   transform: rotate(-5deg);
+  }
+  
+  .cat-one-whiskers-right-one {
+   position: absolute;
+   top: 208px;
+   left: 226px;
+   z-index: 4;
+   border: 1px solid black;
+   width: 120px;
+   height: 2px;
+   transform: scaleX(-1) rotate(8deg);
+  }
+  
+  .cat-one-whiskers-right-two {
+   position: absolute;
+   top: 219px;
+   left: 226px;
+   z-index: 4;
+   border: 1px solid black;
+   width: 120px;
+   height: 2px;
+   transform: scaleX(-1) rotate(3deg);
+  }
+  
+  .cat-one-whiskers-right-three {
+   position: absolute;
+   top: 233px;
+   left: 227px;
+   z-index: 4;
+   border: 1px solid black;
+   width: 120px;
+   height: 2px;
+   transform: scaleX(-1) rotate(-5deg);
+  }
+  
+  .cat-one-mouth-left{
+    z-index: 5;
+    position: absolute;
+    background-color: transparent;
+    top: 240px;
+    left: 165px;
+    width: 35px;
+    height: 20px;
+    border-bottom: 4px solid black;
+    border-radius: 50%;
+  }
+  
+  .cat-one-mouth-right{
+    z-index: 5;
+    position: absolute;
+    background-color: transparent;
+    top: 240px;
+    left: 199px;
+    width: 35px;
+    height: 20px;
+    border-bottom: 4px solid black;
+    border-radius: 50%;
+  }
+  
+  .cat-one{
+    position: relative;
+    left: 00px;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .cat-one:hover {
+  transform-origin: center;
+  transform: rotate(-5deg);
+  }
+  
+  .cat-one:active{
+    .cat-one-eyes{ 
+      display:none;
+  }
+    .cat-one-eyes-closed{
+      display:block;
+  }
+  }
+  
+  /*Cat Two*/
+  /*Most of Cat-One styles apply as only the color changes and animations had to be coded*/
+  
+  .cat-two{
+    position: relative;
+    left: 00px;
+    width: 400px;
+    height: 400px;
+  }
+  
+  
+  .cat-two-head{
+    background: linear-gradient(180deg, rgba(251,119,60,1) 80%, rgba(235,91,0,1) 100%);
+    z-index: 1;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    width: 250px;
+    height: 200px;
+    border: 0px solid;
+    border-radius: 50%;
+  }
+  
+  .cat-two-left-ear {
+    z-index: 0;
+    position: absolute;
+    top: 40px;
+    left: 108px;
+    width: 100px;
+    height: 90px;
+    border-top: 80px solid transparent;
+    border-right: 75px solid transparent;
+    border-left: 75px solid #fb773c;
+    transform: rotate(-10deg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .cat-two-right-ear {
+   z-index: 0;
+    position: absolute;
+    top: 43px;
+    left: 192px;
+    width: 100px;
+    height: 90px;
+    border-top: 80px solid transparent;
+    border-right: 5px solid transparent;
+    border-left: 75px solid #fb773c;
+    transform: scaleX(-1) rotate(-10deg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  
+  .cat-two:hover {
+  transform-origin: center;
+  transform: rotate(5deg);
+  }
+  
+  .cat-two:active{
+    .cat-one-eyes{ 
+      display:none;
+  }
+    .cat-one-eyes-closed{
+      display:block;
+  }
+  }
+  
+  /* Footer */
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 300px;
+  }
+  
+  footer p {
+    font-size: small;
+  }
+  
+  .divider{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 2px solid #EDEADE;
+  }
